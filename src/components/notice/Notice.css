@@ -1,0 +1,14 @@
+
+.noticeBox:not(:first-child){
+    margin-top: 30px;
+}
+
+.noticeTitle:after {
+    content: '';
+    position: absolute;
+    background-color: #091D3E;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 80px;
+}

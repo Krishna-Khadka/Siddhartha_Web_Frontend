@@ -1,0 +1,72 @@
+.mySwiper {
+    width: 100%;
+    height: 90vh;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.slide-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    z-index: 8;
+    background-color: #090707cf;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    z-index: 15;
+    color: #ffffff;
+    max-width: 655px;
+}
+
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.5s ease-out;
+    /* Match animation duration */
+}
+
+.swiper-slide-active .slide-image {
+    transform: scale(1.1);
+}
+
+.swiper-slide-next .slide-image,
+.swiper-slide-prev .slide-image {
+    transform: scale(1);
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    /* Adjust bullet color */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    /* Adjust navigation button color */
+}

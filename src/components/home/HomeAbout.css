@@ -1,0 +1,10 @@
+.about-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+    border: 20px solid #C1272D;
+    z-index: -1;
+}

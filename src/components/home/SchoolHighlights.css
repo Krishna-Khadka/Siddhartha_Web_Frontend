@@ -1,0 +1,26 @@
+
+.highlight-box {
+    transition: all .3s;
+}
+
+.highlight-box:hover {
+    background-color: #34B9CC;
+    margin-top: -40px !important;
+    margin-bottom: -40px !important;
+}
+
+.highlight-box:hover .icon,
+.highlight-box:hover .title,
+.highlight-box:hover .desc
+{
+    color: #ffffff;
+}
+
+
+.highlight-box:hover .title {
+    font-size: 20px;
+}
+
+.highlight-box:hover .desc {
+    font-size: 14px;
+}

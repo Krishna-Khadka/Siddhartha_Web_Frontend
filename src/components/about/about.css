@@ -1,0 +1,64 @@
+.mvBG {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 38% 62% 48% 52% / 36% 44% 56% 64%;
+    background-position-x: center;
+}
+
+.mvBG1 {
+    background-image: url(../../../public/blog1.jpg);
+}
+
+.mvBG2 {
+    background-image: url(../../../public/blog2.jpg);
+}
+
+.mvBG3 {
+    background-image: url(../../../public/blog3.jpg);
+}
+
+
+.mvIcon {
+    height: 80px;
+    width: 80px;
+    background-color: #34B9CC;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38% 62% 48% 52% / 36% 44% 56% 64%;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.coreValueList li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.aboutUsInfo ul li::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: rgb(217, 217, 217);
+}
+
+.aboutUsInfo ul li a {
+    transition: 0.6s;
+}
+
+.aboutUsInfo ul li a:hover {
+    letter-spacing: 0.25px;
+    color: #FC6441;
+}
