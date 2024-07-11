@@ -9,7 +9,7 @@ export default function Blogs() {
             <h4 className="uppercase text-[#535859] text-md font-medium tracking-widest">
               our blogs
             </h4>
-            <h2 className="text-4xl text-secColor font-Barlow tracking-wide pt-2 font-extrabold">
+            <h2 className="text-4xl text-secColor tracking-wide pt-2 font-extrabold">
               Recent News and Articles
             </h2>
             <p className="text-md font-medium text-[#535859] leading-7 pt-4">
@@ -18,7 +18,7 @@ export default function Blogs() {
               neurology, laboratory, imaging diagnostics and more.
             </p>
           </div>
-          <button className="uppercase font-Barlow font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] mt-4 md:mt-0 hover:bg-secColor duration-300 transition-all">
+          <button className="uppercase font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] mt-4 md:mt-0 hover:bg-secColor duration-300 transition-all">
             more articles
           </button>
         </div>

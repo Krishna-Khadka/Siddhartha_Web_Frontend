@@ -14,7 +14,7 @@ export default function SchoolHighlights() {
             >
               <div className="icon text-mainColor">{highlight.icon}</div>
               <div className="text-center pt-4">
-                <h2 className="title font-Barlow font-semibold text-lg text-black transition-all duration-300">
+                <h2 className="title font-semibold text-lg text-black transition-all duration-300">
                   {highlight.title}
                 </h2>
                 <p className="desc text-gray-700 text-xs font-semibold pt-2">

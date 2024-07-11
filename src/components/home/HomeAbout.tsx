@@ -20,13 +20,13 @@ export default function HomeAbout() {
               </div>
             </div>
             <div className="pl-4">
-              <span className="text-[#92210f] mb-3 font-bold block text-base font-OpenSans">
+              <span className="text-[#92210f] mb-3 font-bold block text-base">
                 About our school
               </span>
-              <h2 className="mb-5 text-5xl text-[#252525] font-extrabold leading-[1.1] font-card-font">
+              <h2 className="mb-5 text-5xl text-[#252525] font-extrabold leading-[1.1]">
                 Our education system inspires the next generation
               </h2>
-              <p className="text-base mb-4 leading-[1.8] text-[#6b6b6b] font-OpenSans font-normal">
+              <p className="text-base mb-4 leading-[1.8] text-[#6b6b6b] font-normal">
                 Curabitur aliquet quam id dui posuere blandit. Praesent sapien
                 massa, convallis a pellentesque nec, egestas non nisi. Donec
                 rutrum congue leo eget malesuada. Pellentesque in ipsum id orci

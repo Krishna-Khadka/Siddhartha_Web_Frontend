@@ -17,19 +17,7 @@ const config = {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      'ubuntu': ['Ubuntu', 'sans-serif'],
-      "libre": ["Libre Baskerville", "serif"],
-      "card-font": ["Work Sans", "sans-serif"]
-    },
     extend: {
-      fontFamily: {
-        "Barlow": ["Barlow Semi Condensed", "sans-serif"],
-        "OpenSans": ["Open Sans", "sans-serif"],
-        "mont": ["Montserrat", "sans-serif"],
-        "alike": ["Alike", "serif"],
-        "QuickSand":["Quicksand", "sans-serif"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -4,8 +4,11 @@ import "./globals.css";
 import Navbar from "@/global/Nabvar";
 import TopNav from "@/global/TopNavbar";
 import Footer from "@/global/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Roboto_Condensed } from "@next/font/google";
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Siddhartha School",
@@ -19,12 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={robotoCondensed.className}>
         <TopNav />
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }

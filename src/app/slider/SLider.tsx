@@ -43,7 +43,7 @@ const Slider = () => {
           <div className="slide-inner">
             <div className="background-overlay"></div>
             <div className="content text-left">
-              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px] font-libre font-[900]">
+              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px]  font-[900]">
                 Discover, Learn, Grow: School Experience Unleashed
               </h2>
               <p className="text-base font-medium">
@@ -55,7 +55,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
+                    className="flex items-center gap-3  bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
                   >
                     View all programs
                     <FaLongArrowAltRight />
@@ -64,7 +64,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
+                    className="flex items-center gap-3  bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
                   >
                     View reports
                     <FaLongArrowAltRight />
@@ -79,7 +79,7 @@ const Slider = () => {
           <div className="slide-inner">
             <div className="background-overlay"></div>
             <div className="content text-left">
-              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px] font-libre font-[900]">
+              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px]  font-[900]">
                 Discover, Learn, Grow: School Experience Unleashed
               </h2>
               <p className="text-base font-medium">
@@ -91,7 +91,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
+                    className="flex items-center gap-3  bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
                   >
                     View all programs
                     <FaLongArrowAltRight />
@@ -100,7 +100,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
+                    className="flex items-center gap-3  bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
                   >
                     View reports
                     <FaLongArrowAltRight />
@@ -115,7 +115,7 @@ const Slider = () => {
           <div className="slide-inner">
             <div className="background-overlay"></div>
             <div className="content text-left">
-              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px] font-libre font-[900]">
+              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px]  font-[900]">
                 Discover, Learn, Grow: School Experience Unleashed
               </h2>
               <p className="text-base font-medium">
@@ -127,7 +127,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
+                    className="flex items-center gap-3  bg-secColor text-white text-lg leading-[1] py-5 px-8 border-none font-semibold capitalize text-center hover:bg-[#C1272D] duration-500 transition-all"
                   >
                     View all programs
                     <FaLongArrowAltRight />
@@ -136,7 +136,7 @@ const Slider = () => {
                 <div>
                   <Link
                     href="/"
-                    className="flex items-center gap-3 font-libre bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
+                    className="flex items-center gap-3  bg-[#C1272D] text-white text-lg leading-[1] py-5 px-8 font-semibold capitalize text-center border border-transparent hover:border-[#C1272D] hover:bg-transparent duration-500 transition-all"
                   >
                     View reports
                     <FaLongArrowAltRight />

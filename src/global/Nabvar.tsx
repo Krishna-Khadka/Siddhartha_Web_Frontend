@@ -40,40 +40,40 @@ export default function Navbar() {
           <div className="hidden sm:flex">
             <ul className="hidden sm:flex items-center">
               <Link href="/">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Home
                 </li>
               </Link>
               <Link href="/about">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   About Us
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Services
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Blogs
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Gallery
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-Barlow font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Contact
                 </li>
               </Link>
               <Link href="/">
                 <li className="ml-10">
-                  <button
-                  className="capitalize font-Barlow font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all"
-                  >view vacancy</button>
+                  <button className="capitalize font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all">
+                    view vacancy
+                  </button>
                 </li>
               </Link>
             </ul>
@@ -110,7 +110,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Home
               </li>
@@ -118,7 +118,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 About Us
               </li>
@@ -126,7 +126,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Services
               </li>
@@ -134,7 +134,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Blogs
               </li>
@@ -142,7 +142,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Gallery
               </li>
@@ -150,7 +150,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer font-ubuntu text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Contact
               </li>

@@ -25,15 +25,15 @@ export default function MissionVision() {
                     className="w-12 h-12 object-cover"
                   />
                 </div>
-                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4 font-libre">
+                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4">
                   our vision
                 </h1>
-                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 font-libre">
+                <p className="text-lg text-[#323239] font-medium leading-[2] m-0">
                   We envision Samriddhi School as a dynamic and inspiring
                   educational institution that sets an example for the learning
                   community.
                 </p>
-                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 font-libre">
+                <p className="text-lg text-[#323239] font-medium leading-[2] m-0">
                   We are committed to providing an outstanding learning
                   environment to our students, to enable them to excel and
                   thrive in a complex, constantly changing world, getting more
@@ -60,10 +60,10 @@ export default function MissionVision() {
                     className="w-12 h-12 object-cover"
                   />
                 </div>
-                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4 font-libre">
+                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4">
                   our mission
                 </h1>
-                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 font-libre">
+                <p className="text-lg text-[#323239] font-medium leading-[2] m-0">
                   The mission of Samriddhi School is to produce lifelong
                   learners with a value system that turns them into good human
                   beings. Honesty, integrity, and sincerity are values that form
@@ -71,7 +71,7 @@ export default function MissionVision() {
                   process, culminating in academic and personal success of our
                   students.
                 </p>
-                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 font-libre">
+                <p className="text-lg text-[#323239] font-medium leading-[2] m-0">
                   To this end, we make use of the best educational practices and
                   a rich curriculum. Added to this, we plan on collaborating
                   with all stakeholders including students, parents, families,
@@ -93,44 +93,44 @@ export default function MissionVision() {
                     className="w-12 h-12 object-cover"
                   />
                 </div>
-                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4 font-libre">
+                <h1 className="capitalize text-4xl font-semibold text-[#434343] mb-4">
                   Our Core Values
                 </h1>
-                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 mb-4 font-libre">
+                <p className="text-lg text-[#323239] font-medium leading-[2] m-0 mb-4">
                   Building quality lives and strong culture through…
                 </p>
                 <ul className="coreValueList">
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Compassion</p>
+                    <p className="text-lg font-light">Compassion</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Respect</p>
+                    <p className="text-lg font-light">Respect</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Service</p>
+                    <p className="text-lg font-light">Service</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Excellence</p>
+                    <p className="text-lg font-light">Excellence</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Responsibility</p>
+                    <p className="text-lg font-light">Responsibility</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Teamwork</p>
+                    <p className="text-lg font-light">Teamwork</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Integrity</p>
+                    <p className="text-lg font-light">Integrity</p>
                   </li>
                   <li className="flex items-center gap-3 ">
                     <Image src={check} alt="check" className="w-5" />
-                    <p className="text-lg font-light font-libre">Empowerment</p>
+                    <p className="text-lg font-light">Empowerment</p>
                   </li>
                 </ul>
               </div>

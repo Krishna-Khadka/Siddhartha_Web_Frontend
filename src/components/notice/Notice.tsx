@@ -19,10 +19,10 @@ export default function Notice() {
                 </div>
               </div>
               <div className="pb-8">
-                <h2 className="noticeTitle relative text-xl font-bold font-Barlow">
+                <h2 className="noticeTitle relative text-xl font-bold">
                   {notice.title}
                 </h2>
-                <p className="text-sm font-semibold font-OpenSans pt-4 leading-6">
+                <p className="text-sm font-semibold pt-4 leading-6">
                   {notice.description}
                 </p>
               </div>

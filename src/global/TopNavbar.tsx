@@ -18,7 +18,7 @@ const TopNav = () => {
               <FaEnvelope size={14} className="cursor-pointer" />
             </span>
             <Link href="#">
-              <h3 className="text-xs md:text-sm font-OpenSans font-medium tracking-wider text-white">
+              <h3 className="text-xs md:text-sm font-medium tracking-wider text-white">
                 siddhartha@gmail.com
               </h3>
             </Link>
@@ -28,7 +28,7 @@ const TopNav = () => {
               <FaPhoneVolume size={14} className="cursor-pointer" />
             </span>
             <Link href="/">
-              <h3 className="text-xs md:text-sm font-OpenSans font-medium tracking-wider text-white">
+              <h3 className="text-xs md:text-sm font-medium tracking-wider text-white">
                 9762548964
               </h3>
             </Link>

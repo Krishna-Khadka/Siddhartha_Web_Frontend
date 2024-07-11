@@ -15,7 +15,7 @@ export default function Card() {
             <h4 className="uppercase text-[#535859] text-md font-medium tracking-widest">
               our blogs
             </h4>
-            <h2 className="text-4xl text-secColor font-Barlow tracking-wide pt-2 font-extrabold">
+            <h2 className="text-4xl text-secColor tracking-wide pt-2 font-extrabold">
               Recent News and Articles
             </h2>
             <p className="text-md font-medium text-[#535859] leading-7 pt-4">
@@ -24,7 +24,7 @@ export default function Card() {
               neurology, laboratory, imaging diagnostics and more.
             </p>
           </div>
-          <button className="uppercase font-Barlow font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] mt-4 md:mt-0 hover:bg-secColor duration-300 transition-all">
+          <button className="uppercase font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] mt-4 md:mt-0 hover:bg-secColor duration-300 transition-all">
             more articles
           </button>
         </div>
@@ -38,14 +38,14 @@ export default function Card() {
               />
             </div>
             <div className="">
-              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] font-OpenSans mb-4">
+              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024
               </span>
-              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold font-card-font">
+              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold">
                 How I applying to school
               </h3>
-              <p className="mb-3 text-[15px] text-[#6b6b6b] font-OpenSans font-normal">
+              <p className="mb-3 text-[15px] text-[#6b6b6b] font-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis
                 consectetur.
@@ -68,14 +68,14 @@ export default function Card() {
               />
             </div>
             <div className="">
-              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] font-OpenSans mb-4">
+              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024
               </span>
-              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold font-card-font">
+              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold">
                 How I applying to school
               </h3>
-              <p className="mb-3 text-[15px] text-[#6b6b6b] font-OpenSans font-normal">
+              <p className="mb-3 text-[15px] text-[#6b6b6b] font-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis
                 consectetur.
@@ -98,14 +98,14 @@ export default function Card() {
               />
             </div>
             <div className="">
-              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] font-OpenSans mb-4">
+              <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024
               </span>
-              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold font-card-font">
+              <h3 className="mb-3 text-2xl text-[#252525] font-extrabold">
                 How I applying to school
               </h3>
-              <p className="mb-3 text-[15px] text-[#6b6b6b] font-OpenSans font-normal">
+              <p className="mb-3 text-[15px] text-[#6b6b6b] font-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis
                 consectetur.

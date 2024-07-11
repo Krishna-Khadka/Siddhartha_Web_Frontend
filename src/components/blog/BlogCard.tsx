@@ -43,7 +43,7 @@ export default function BlogCard() {
                 </Link>
               </div>
             </div>
-            <h4 className="mt-2 mb-1 text-2xl font-semibold font-Barlow leading-8 text-secColor hover:text-mainColor transition-all duration-300">
+            <h4 className="mt-2 mb-1 text-2xl font-semibold leading-8 text-secColor hover:text-mainColor transition-all duration-300">
               <Link href="#">{blog.title}</Link>
             </h4>
             <p className="mt-3 border-t-2 pt-3 border-t-[#F1F1F1] text-[#535859] text-md leading-7 font-medium">

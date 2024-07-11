@@ -26,7 +26,7 @@ export default function Event() {
           }}
         >
           <div className="pb-3 sm:pb-3 md:pb-10 lg:pb-10">
-            <h3 className="relative pl-4 sm:pl-4 md:pl-12 text-3xl font-semibold font-Barlow">
+            <h3 className="relative pl-4 sm:pl-4 md:pl-12 text-3xl font-semibold">
               Event Heading
             </h3>
             <p className="pl-4 sm:pl-4 pr-4 sm:pr-4 md:pr-0 md:pl-12 text-xs sm:text-xs md:text-md pt-1 sm:pt-1 md:pt-4">

@@ -70,7 +70,7 @@ export default function AboutUs() {
         </div>
         <div className="pb-20">
           <div style={{ maxWidth: "1170px" }}>
-            <h1 className="text-black font-libre text-4xl font-[900] tracking-[1.28px] mb-[70px]">
+            <h1 className="text-black text-4xl font-[900] tracking-[1.28px] mb-[70px]">
               Our campus build lifelong friendships with students who share your
               interests, passions, and perspectives{" "}
             </h1>
@@ -97,7 +97,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Sports Club
                         </Link>
@@ -106,7 +106,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Music Club
                         </Link>
@@ -115,7 +115,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Drama Club
                         </Link>
@@ -124,7 +124,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Arts Club
                         </Link>
@@ -137,7 +137,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Football
                         </Link>
@@ -146,7 +146,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Volleyball
                         </Link>
@@ -155,7 +155,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Taekwondo
                         </Link>
@@ -164,7 +164,7 @@ export default function AboutUs() {
                       <li className="flex gap-3 items-center mb-[25px] pl-[50px]">
                         <Link
                           href="#"
-                          className="font-libre text-xl font-bold text-[#353688]"
+                          className= "text-xl font-bold text-[#353688]"
                         >
                           Athletics
                         </Link>
@@ -193,12 +193,12 @@ export default function AboutUs() {
                 weekends from September 15th through December 25th.
               </p>
               <ul className="mt-5">
-                <li className="text-lg text-[#353688] font-semibold mb-2 font-libre">
+                <li className="text-lg text-[#353688] font-semibold mb-2">
                   Sunday to Friday
                   <span className="px-2">-</span>
                   9:00 am to 04:00 pm
                 </li>
-                <li className="text-lg text-[#C1272D] font-semibold mb-0 font-libre">
+                <li className="text-lg text-[#C1272D] font-semibold mb-0">
                   Saturday
                   <span className="px-2">-</span>
                   closed

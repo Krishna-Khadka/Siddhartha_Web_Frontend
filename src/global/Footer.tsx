@@ -14,91 +14,91 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div></div>
             <div className="pl-[2rem] pb-[30px]">
-              <h2 className="footerTitle font-card-font">Useful link</h2>
+              <h2 className="footerTitle">Useful link</h2>
               <ul className="footerList">
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Application
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Alumni
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Privacy Policy
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="pl-[2rem] pb-[30px]">
-              <h2 className="footerTitle font-card-font">Study</h2>
+              <h2 className="footerTitle">Study</h2>
               <ul className="footerList">
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Find a course
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Admissions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Scholarships
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Study on campus
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="font-OpenSans">
+                  <Link href="#" className="">
                     Fees adn costs
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="pl-[2rem] pb-[30px]">
-              <h2 className="footerTitle font-card-font">Inquiries</h2>
+              <h2 className="footerTitle">Inquiries</h2>
               <ul className="footerContact">
-                <li className="font-OpenSans flex gap-2">
+                <li className=" flex gap-2">
                   <div>
                     <GrLocation className="footerIcon" />
                   </div>
-                  <div className="font-OpenSans pl-2">
+                  <div className="pl-2">
                     <p>Address</p>
                     <Link href="#">Sundarharaincha-12, Morang</Link>
                   </div>
                 </li>
-                <li className="font-OpenSans flex gap-2">
+                <li className="flex gap-2">
                   <div>
                     <FaEnvelope className="footerIcon" />
                   </div>
-                  <div className="font-OpenSans pl-2">
+                  <div className="pl-2">
                     <p>Email</p>
                     <Link href="#">siddhartha123@gmail.com</Link>
                   </div>
                 </li>
-                <li className="font-OpenSans flex gap-2">
+                <li className="flex gap-2">
                   <div>
                     <FaEnvelope className="footerIcon" />
                   </div>
-                  <div className="font-OpenSans pl-2">
+                  <div className="pl-2">
                     <p>Phone</p>
                     <Link href="#">+977 9852054850</Link>
                   </div>
