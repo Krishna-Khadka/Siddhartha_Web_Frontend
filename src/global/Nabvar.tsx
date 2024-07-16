@@ -59,6 +59,11 @@ export default function Navbar() {
                   Blogs
                 </li>
               </Link>
+              <Link href="/event">
+                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                  Events
+                </li>
+              </Link>
               <Link href="/">
                 <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Gallery

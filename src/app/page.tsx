@@ -8,6 +8,7 @@ import Card from "@/global/Card";
 import Slider from "./slider/SLider";
 import EventCard from "@/global/EventCard";
 import Counter from "@/components/counter/Counter";
+import Testimonial from "@/components/home/Testimonial";
 
 export default function Home() {
   return (
@@ -50,6 +51,9 @@ export default function Home() {
         <Card />
       </div>
       <Counter />
+      <div className="pt-10 pb-10">
+        <Testimonial />
+      </div>
     </div>
   );
 }
