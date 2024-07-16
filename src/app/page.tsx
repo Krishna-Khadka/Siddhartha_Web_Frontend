@@ -9,6 +9,7 @@ import Slider from "./slider/SLider";
 import EventCard from "@/global/EventCard";
 import Counter from "@/components/counter/Counter";
 import Testimonial from "@/components/home/Testimonial";
+import Newsletter from "@/components/home/Newsletter";
 
 export default function Home() {
   return (
@@ -19,31 +20,6 @@ export default function Home() {
         <SchoolHighlights />
       </div>
       <HomeAbout />
-      {/* <div className="container mx-auto py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
-          <div className="flex flex-col gap-6">
-            <div>
-              <h2 className="capitalize text-4xl font-extrabold text-secColor">
-                upcoming events
-              </h2>
-            </div>
-            <div>
-              <Event />
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 ">
-            <div className="mt-4 sm:mt-4 md:mt-0">
-              <h2 className="capitalize text-4xl font-extrabold text-secColor">
-                important dates
-              </h2>
-            </div>
-            <div>
-              <Notice />
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <Blogs /> */}
       <div className="pb-20">
         <EventCard />
       </div>
@@ -54,6 +30,7 @@ export default function Home() {
       <div className="pt-10 pb-10">
         <Testimonial />
       </div>
+        <Newsletter />
     </div>
   );
 }

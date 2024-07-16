@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/global/Nabvar";
 import TopNav from "@/global/TopNavbar";
 import Footer from "@/global/Footer";
 import { Roboto_Condensed } from "@next/font/google";
+import CustomCursor from "@/components/CustomCursor";
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   display: "swap",
@@ -23,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoCondensed.className}>
-        <TopNav />
-        <Navbar />
-        {children}
-        <Footer />
+        <CustomCursor>
+          <TopNav />
+          <Navbar />
+          {children}
+          <Footer />
+        </CustomCursor>
       </body>
     </html>
   );

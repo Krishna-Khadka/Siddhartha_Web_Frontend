@@ -29,15 +29,15 @@ export default function Card() {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-7 mt-10">
-          <div>
-            <div className="imageBanner mb-5">
+          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+            <div className="imageBanner">
               <Image
                 src={blog1}
                 alt="blog image"
                 className="w-full h-full object-center"
               />
             </div>
-            <div className="">
+            <div className="px-6 py-4">
               <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024
@@ -59,15 +59,15 @@ export default function Card() {
               </Link>
             </div>
           </div>
-          <div>
-            <div className="imageBanner mb-5">
+          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+            <div className="imageBanner">
               <Image
                 src={blog2}
                 alt="blog image"
                 className="w-full h-full object-center"
               />
             </div>
-            <div className="">
+            <div className="px-6 py-4">
               <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024
@@ -89,15 +89,15 @@ export default function Card() {
               </Link>
             </div>
           </div>
-          <div>
-            <div className="imageBanner mb-5">
+          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+            <div className="imageBanner">
               <Image
                 src={blog3}
                 alt="blog image"
                 className="w-full h-full object-center"
               />
             </div>
-            <div className="">
+            <div className="px-6 py-4">
               <span className="flex items-center gap-3 text-[#6b6b6b] text-[15px] mb-4">
                 <FaCalendar className="text-[#92210F]" />
                 25 July, 2024

@@ -264,3 +264,14 @@
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #b2c0d8;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}

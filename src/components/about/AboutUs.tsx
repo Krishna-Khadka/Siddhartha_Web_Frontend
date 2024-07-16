@@ -12,7 +12,7 @@ export default function AboutUs() {
   return (
     <>
       <div className="container">
-        <div style={{ height: "70dvh;" }} className="my-20">
+        <div style={{ height: "70dvh" }} className="my-20">
           <Image
             src={aboutBanner}
             alt="about banner image"

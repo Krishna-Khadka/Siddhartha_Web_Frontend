@@ -41,16 +41,19 @@ export default function Testimonial() {
         <Swiper
           slidesPerView={2}
           spaceBetween={30}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          // navigation={{
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            // when window width is >= 0px
+            0: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+            },
           }}
           modules={[Pagination, Navigation, EffectFade, Autoplay]}
         >

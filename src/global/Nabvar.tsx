@@ -40,43 +40,43 @@ export default function Navbar() {
           <div className="hidden sm:flex">
             <ul className="hidden sm:flex items-center">
               <Link href="/">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Home
                 </li>
               </Link>
               <Link href="/about">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   About Us
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
-                  Services
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                  Programs
+                </li>
+              </Link>
+              <Link href="/faculty">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                  teachers
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Blogs
                 </li>
               </Link>
               <Link href="/event">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Events
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
-                  Gallery
-                </li>
-              </Link>
-              <Link href="/">
-                <li className="ml-10 capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Contact
                 </li>
               </Link>
               <Link href="/">
                 <li className="ml-10">
-                  <button className="capitalize font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all">
+                  <button className="tracking-wider capitalize font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all">
                     view vacancy
                   </button>
                 </li>
@@ -89,7 +89,7 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className={`fixed top-0 w-[85%]  sm:hidden h-screen bg-gray-900 p-10 ease-in duration-500 ${
+        className={`fixed top-0 w-[85%]  sm:hidden h-screen bg-gray-900 p-10 z-50 ease-in duration-500 ${
           menuOpen ? "left-0" : "left-[-100%]"
         }`}
       >
@@ -115,12 +115,12 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+                className="py-4 tracking-wider cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
@@ -133,7 +133,15 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
-                Services
+                Programs
+              </li>
+            </Link>
+            <Link href="/faculty">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+              >
+                Teachers
               </li>
             </Link>
             <Link href="/">
@@ -144,12 +152,12 @@ export default function Navbar() {
                 Blogs
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/event">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
-                Gallery
+                Event
               </li>
             </Link>
             <Link href="/">
