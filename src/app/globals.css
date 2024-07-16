@@ -101,50 +101,99 @@
 }
 
 /* footer css */
-/* .footerBg {
-  background-image: url(../../public/footer-bg.jpg);
+
+.footer {
+  background: url(../../public//footer-bg.png);
+  background-position: center center !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon-box {
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
+.title h1 {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 5px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.title h1::before {
+  content: "";
+  position: absolute;
+  background-color: #FF3115;
+  left: 0;
+  bottom: 22px;
+  height: 2px;
+  width: 70px;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social li:hover a {
+  background-color: #FF3115;
+}
+
+.footer-social li a {
+  font-size: 16px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffffff47;
   text-align: center;
-  background-color: #34B9CC;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff !important;
+  transition: .5s all ease;
 }
 
-.footer-links li a {
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #b2c0d8;
   display: inline-block;
-  position: relative;
-  padding-left: 21px;
-  font-style: 14px;
-  font-weight: 400;
+  transition: .5s all ease;
 }
 
-.footer-links li a::before {
-  content: "";
-  position: absolute;
-  line-height: 1em;
-  font-size: 14px;
-  width: 11px;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  top: 12px;
-  background-color: red;
-  z-index: 90;
-} */
+.footer-links ul li a:hover {
+  color: #FF3115;
+}
+
+.footer-contact-list>ul>li,
+.footer-event-list>ul>li
+{
+  margin-bottom: 20px;
+}
+
+.footer-contact {
+  color: #fff;
+}
+
+.footer-contact .footer-contact-icon {
+  font-size: 16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FF3115;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
 
 /* about banner */
 
 .bannerBG {
-  background: linear-gradient(#0009,#000A) ,url(../../public/aboutBanner.jpg);
+  background: linear-gradient(#0009, #000A), url(../../public/aboutBanner.jpg);
   background-color: rgba(0, 0, 0, 0.13);
   /* background-position: top center; */
   background-size: cover;
@@ -198,52 +247,6 @@
   vertical-align: middle;
 }
 
-.footerTitle {
-  font-size: 24px;
-  margin-bottom: 25px;
-  color: white;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.footerList li {
-  margin-bottom: 15px;
-}
-
-.footerList li a {
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
-  transition: .5s all ease;
-}
-
-.footerList li a:hover {
-  color: #92210f;
-}
-
-.footerContact .footerIcon {
-  font-size: 25px;
-  color: #92210f;
-  margin-top: 6px;
-}
-
-.footerContact li {
-  margin-bottom: 15px;
-}
-
-.footerContact p {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  display: block;
-  color: white;
-}
-
-.footerContact a {
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-}
 
 .card-wrapper {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
