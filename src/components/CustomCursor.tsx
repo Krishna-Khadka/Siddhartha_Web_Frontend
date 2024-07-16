@@ -1,4 +1,4 @@
-"use client"; // This makes the component a client component
+"use client"; 
 
 import { useEffect, ReactNode } from "react";
 import gsap from "gsap";

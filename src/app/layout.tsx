@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
+import NextTopLoader from "nextjs-toploader";
 import Navbar from "@/global/Nabvar";
 import TopNav from "@/global/TopNavbar";
 import Footer from "@/global/Footer";
@@ -23,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoCondensed.className}>
+        <NextTopLoader color="#EA062B" showSpinner={true} height={5} />
         <CustomCursor>
           <TopNav />
           <Navbar />
