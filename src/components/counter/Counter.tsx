@@ -57,7 +57,7 @@ export default function Counter() {
                   className="text-white w-full sm:w-full md:w-[90%] mx-auto text-center p-[30px] border border-solid border-[rgba(255, 255, 255, 0.2)] transition-all duration-300 hover:border-[#ff3115] mt-0 sm:mt-0 md:mt-6"
                 >
                   <h2 className="text-3xl sm:text-3xl md:text-6xl font-bold mb-2 ">25</h2>
-                  <h4 className="uppercase text-xl font-medium mb-0">ECA's</h4>
+                  <h4 className="uppercase text-xl font-medium mb-0">ECA&apos;s</h4>
                 </div>
               </div>
             </div>
