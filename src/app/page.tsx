@@ -10,6 +10,7 @@ import EventCard from "@/global/EventCard";
 import Counter from "@/components/counter/Counter";
 import Testimonial from "@/components/home/Testimonial";
 import Newsletter from "@/components/home/Newsletter";
+import { Features } from "@/components/home/Features";
 
 export default function Home() {
   return (
@@ -23,14 +24,15 @@ export default function Home() {
       <div className="pb-20">
         <EventCard />
       </div>
-      <div className="pb-20">
+        <Features />
+      <div className="py-20">
         <Card />
       </div>
       <Counter />
       <div className="pt-10 pb-10">
         <Testimonial />
       </div>
-        <Newsletter />
+      <Newsletter />
     </div>
   );
 }
