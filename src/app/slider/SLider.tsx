@@ -43,7 +43,7 @@ const Slider = () => {
           <div className="slide-inner">
             <div className="background-overlay"></div>
             <div className="content text-left">
-              <h2 className="text-6xl text-white tracking-[2.4px] mb-6 leading-[75px]  font-[900]">
+              <h2 className="text-3xl sm:text-3xl md:text-6xl text-white tracking-[2.4px] mb-6 leading-[75px]  font-[900]">
                 Discover, Learn, Grow: School Experience Unleashed
               </h2>
               <p className="text-base font-medium">
@@ -75,7 +75,7 @@ const Slider = () => {
             <Image src={slider1} alt="Slider image 1" className="slide-image" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="slide-inner">
             <div className="background-overlay"></div>
             <div className="content text-left">
@@ -146,7 +146,7 @@ const Slider = () => {
             </div>
             <Image src={slider3} alt="Slider image 3" className="slide-image" />
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
