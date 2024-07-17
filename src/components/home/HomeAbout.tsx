@@ -11,7 +11,7 @@ export default function HomeAbout() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div className="about-img">
-              <div style={{ width: "95%"  }}>
+              <div className="w-full sm:w-full lg:w-[95%]">
                 <Image
                   src={aboutImage}
                   alt="home about image"
@@ -19,11 +19,11 @@ export default function HomeAbout() {
                 />
               </div>
             </div>
-            <div className="pl-4">
-              <span className="text-[#92210f] mb-3 font-bold block text-base">
+            <div className="pl-0 sm:pl-0 lg:pl-4 pt-4 sm:pt-4 md:pt-0">
+              <span className="text-[#FF3115] mb-3 font-bold block text-base tracking-wider sm:tracking-wider lg:tracking-normal">
                 About our school
               </span>
-              <h2 className="mb-5 text-5xl text-[#252525] font-extrabold leading-[1.1]">
+              <h2 className="mb-5 text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-[#252525] font-extrabold leading-[1.1]">
                 Our education system inspires the next generation
               </h2>
               <p className="text-base mb-4 leading-[1.8] text-[#6b6b6b] font-normal">

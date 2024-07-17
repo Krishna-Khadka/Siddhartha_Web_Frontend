@@ -1,4 +1,3 @@
-
 .highlight-box {
     transition: all .3s;
 }
@@ -9,10 +8,15 @@
     margin-bottom: -40px !important;
 }
 
+@media (max-width: 640px) {
+    .highlight-box {
+        box-shadow: 1px solid #f2f2f2;
+    }
+}
+
 .highlight-box:hover .icon,
 .highlight-box:hover .title,
-.highlight-box:hover .desc
-{
+.highlight-box:hover .desc {
     color: #ffffff;
 }
 

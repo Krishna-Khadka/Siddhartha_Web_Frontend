@@ -17,15 +17,15 @@ export default function Home() {
     <div>
       {/* <Hero /> */}
       <Slider />
-      <div className="mt-[-50px]">
+      <div className="mt-20 sm:mt-20 lg:mt-[-50px]">
         <SchoolHighlights />
       </div>
       <HomeAbout />
-      <div className="pb-20">
+      <div className="py-12 sm:py-12 md:py-16 lg:py-20">
         <EventCard />
       </div>
         <Features />
-      <div className="py-20">
+      <div className="py-12 sm:py-12 md:py-16 lg:py-20">
         <Card />
       </div>
       <Counter />

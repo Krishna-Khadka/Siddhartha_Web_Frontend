@@ -5,7 +5,7 @@ export default function SchoolHighlights() {
   return (
     <>
       <div className="container mx-auto pb-10">
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 z-40 bg-white shadow-xl">
+        <div className="relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 z-40 bg-white shadow-xl">
           {SCHOOL_HIGHLIGHTS.map((highlight, index) => (
             <div
               key={index}

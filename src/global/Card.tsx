@@ -12,13 +12,13 @@ export default function Card() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="w-full sm:w-full md:w-2/3 ">
-            <h4 className="uppercase text-[#535859] text-md font-medium tracking-widest">
+            <h4 className="uppercase text-[#FF3115] text-md font-medium tracking-widest">
               our blogs
             </h4>
-            <h2 className="text-4xl text-secColor tracking-wide pt-2 font-extrabold">
+            <h2 className="text-3xl sm:text-3xl lg:text-4xl text-secColor tracking-wide pt-2 font-extrabold">
               Recent News and Articles
             </h2>
-            <p className="text-md font-medium text-[#535859] leading-7 pt-4">
+            <p className="text-md font-medium text-[#6b6b6b] leading-7 pt-4">
               Since its founding Brivona has been providing its patients with
               the full medical care, encompassing outpatients services, is
               neurology, laboratory, imaging diagnostics and more.
