@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../public/logo.png";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -22,6 +22,15 @@ export default function Navbar() {
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => document.body.classList.remove("overflow-hidden"); // Cleanup on unmount
+  }, [menuOpen]);
 
   return (
     <nav className="w-full h-20 shadow-x">
@@ -92,6 +101,7 @@ export default function Navbar() {
         className={`fixed top-0 w-[85%]  sm:hidden h-screen bg-gray-900 p-10 z-50 ease-in duration-500 ${
           menuOpen ? "left-0" : "left-[-100%]"
         }`}
+        style={{ overflowY: "auto", maxHeight: "100vh" }}
       >
         <div className="flex w-full items-center justify-end">
           {/* <Link href="/navbar">
@@ -209,7 +219,7 @@ export default function Navbar() {
         </div>
 
         {/* mobile nav social links */}
-        <div className="flex flex-row items-center mt-8 gap-4">
+        <div className="flex flex-row items-center mt-8 gap-4 pb-4">
           <span className="icon-bg">
             <FaFacebook size={18} className="cursor-pointer" />
           </span>
