@@ -23,7 +23,7 @@ export default function Testimonial() {
   return (
     <>
       <div className="container mx-auto relative testimonial-container">
-        <div>
+        <div data-aos="fade-right">
           <div className="mb-2 sm:mb-2 md:mb-6">
             <h2 className="uppercase text-black font-bold tracking-wide text-lg sm:text-lg md:text-3xl">
               testimonial

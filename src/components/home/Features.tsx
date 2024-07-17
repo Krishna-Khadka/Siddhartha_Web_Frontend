@@ -11,25 +11,31 @@ export function Features() {
           {/* first grid div */}
           <div className="bg-[#125875] py-20">
             <div className="w-[88%] ml-auto">
-              <div>
-                <h2 className="text-4xl text-white tracking-wide font-extrabold">
-                  Our Best Features
-                </h2>
-              </div>
-              <div>
-                <p className="text-md font-medium leading-7 pt-4 text-gray-200">
-                  At Siddhartha, our teachers are more than just educators; they
-                  are mentors, guides, and role models. With years of experience
-                  and a passion for teaching, our faculty members are dedicated
-                  to providing personalized attention and support to each
-                  student
-                </p>
+              <div data-aos="fade-right">
+                <div>
+                  <h2 className="text-4xl text-white tracking-wide font-extrabold">
+                    Our Best Features
+                  </h2>
+                </div>
+                <div>
+                  <p className="text-md font-medium leading-7 pt-4 text-gray-200">
+                    At Siddhartha, our teachers are more than just educators;
+                    they are mentors, guides, and role models. With years of
+                    experience and a passion for teaching, our faculty members
+                    are dedicated to providing personalized attention and
+                    support to each student
+                  </p>
+                </div>
               </div>
 
               {/* feature list div */}
               <div className="pt-8">
                 <ul>
-                  <li className="flex gap-4">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    className="flex gap-4"
+                  >
                     {/* icon div */}
                     <div
                       className="w-1/3 feature-icon flex items-center justify-center text-white rounded-[50%]"
@@ -56,7 +62,11 @@ export function Features() {
                     </div>
                   </li>
 
-                  <li className="flex gap-4 pt-8">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    className="flex gap-4 pt-8"
+                  >
                     {/* icon div */}
                     <div
                       className="w-1/3 feature-icon flex items-center justify-center text-white rounded-[50%]"
@@ -83,7 +93,11 @@ export function Features() {
                     </div>
                   </li>
 
-                  <li className="flex gap-4 pt-8">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    className="flex gap-4 pt-8"
+                  >
                     {/* icon div */}
                     <div
                       className="w-1/3 feature-icon flex items-center justify-center text-white rounded-[50%]"
@@ -117,6 +131,7 @@ export function Features() {
 
           {/* second grid div */}
           <div
+            data-aos="fade-right"
             className="bg-cover bg-no-repeat h-full bg-center"
             style={{ backgroundImage: `url(${feature.src})` }}
           ></div>

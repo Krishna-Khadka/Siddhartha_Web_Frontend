@@ -9,7 +9,7 @@ export default function Newsletter() {
       <div className="w-[95%] sm:w-[95%] mx-auto md:container">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
           {/* first div grid */}
-          <div className="flex flex-wrap text-center items-center gap-8">
+          <div data-aos="fade-right" className="flex flex-wrap text-center items-center gap-8">
             <div className="mx-auto sm:mx-auto md:mx-0">
               <Image
                 src={mail}
@@ -28,7 +28,7 @@ export default function Newsletter() {
           </div>
 
           {/* second div grid */}
-          <div className="newsletter relative">
+          <div data-aos="fade-left" className="newsletter relative">
             <input
               type="text"
               className="form-control pl-0 sm:pl-0 md:pl-5"

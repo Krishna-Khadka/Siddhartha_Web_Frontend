@@ -8,6 +8,7 @@ export default function SchoolHighlights() {
         <div className="relative grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 z-40 bg-white shadow-xl">
           {SCHOOL_HIGHLIGHTS.map((highlight, index) => (
             <div
+            data-aos="fade-up" data-aos-duration="1000"
               key={index}
               className="highlight-box flex flex-col justify-center items-center py-10"
               style={{ borderRight: "1px solid #f2f2f2" }}

@@ -11,7 +11,7 @@ export default function Card() {
     <>
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div className="w-full sm:w-full md:w-2/3 ">
+          <div data-aos="fade-right" className="w-full sm:w-full md:w-2/3 ">
             <h4 className="uppercase text-[#FF3115] text-md font-medium tracking-widest">
               our blogs
             </h4>
@@ -29,7 +29,7 @@ export default function Card() {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-7 mt-10">
-          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
             <div className="imageBanner">
               <Image
                 src={blog1}
@@ -59,7 +59,7 @@ export default function Card() {
               </Link>
             </div>
           </div>
-          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
             <div className="imageBanner">
               <Image
                 src={blog2}
@@ -89,7 +89,7 @@ export default function Card() {
               </Link>
             </div>
           </div>
-          <div style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
+          <div data-aos="fade-up" data-aos-duration="1000" style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}>
             <div className="imageBanner">
               <Image
                 src={blog3}
