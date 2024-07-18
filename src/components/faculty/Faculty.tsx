@@ -82,14 +82,16 @@ const Faculty = () => {
       <nav className="flex flex-col sm:flex-row justify-center items-center gap-4 pb-4 border-b">
         {tabs.map((tab) => (
           <button
-          key={tab.id}
-          onClick={() => setActiveTab(tab.id)}
-          className={`flex-1 w-full sm:w-full md:py-2 md:px-4 rounded text-center ${
-            activeTab === tab.id ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'
-          }`}
-        >
-          {tab.label}
-        </button>
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`flex-1 w-full sm:w-full md:py-2 md:px-4 rounded text-center ${
+              activeTab === tab.id
+                ? "bg-blue-500 text-white"
+                : "bg-gray-200 text-black"
+            }`}
+          >
+            {tab.label}
+          </button>
         ))}
       </nav>
 

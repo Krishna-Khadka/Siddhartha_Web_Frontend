@@ -18,9 +18,14 @@ import {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleResourcesToggle = () => {
+    setResourcesOpen(!resourcesOpen);
   };
 
   useEffect(() => {
@@ -53,31 +58,50 @@ export default function Navbar() {
                   Home
                 </li>
               </Link>
-              <Link href="/about">
-                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+              <div className="relative group">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all group-hover:block">
                   About Us
                 </li>
-              </Link>
+                <div className="absolute z-[90] left-0 w-48 bg-white border rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:block transition-opacity duration-300">
+                  <Link href="/about">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      About Siddhartha
+                    </div>
+                  </Link>
+                  <Link href="/faculty">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Members
+                    </div>
+                  </Link>
+                </div>
+              </div>
               <Link href="/">
                 <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Programs
                 </li>
               </Link>
-              <Link href="/faculty">
-                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
-                  teachers
+              <div className="relative group">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all group-hover:block">
+                  Resources
                 </li>
-              </Link>
-              <Link href="/">
-                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
-                  Blogs
-                </li>
-              </Link>
-              <Link href="/event">
-                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
-                  Events
-                </li>
-              </Link>
+                <div className="absolute z-[90] left-0 w-48 bg-white border rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:block transition-opacity duration-300">
+                  <Link href="/notice">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Notices
+                    </div>
+                  </Link>
+                  <Link href="/event">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Events
+                    </div>
+                  </Link>
+                  <Link href="/blog">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Blogs
+                    </div>
+                  </Link>
+                </div>
+              </div>
               <Link href="/">
                 <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Contact
@@ -130,14 +154,33 @@ export default function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/about">
+            <div>
               <li
-                onClick={() => setMenuOpen(false)}
+                onClick={handleResourcesToggle}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 About Us
               </li>
-            </Link>
+              {resourcesOpen && (
+                <div className="flex flex-col pl-4">
+                  <Link href="/about">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      About Siddhratha
+                    </div>
+                  </Link>
+                  <Link href="/faculty">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Members
+                    </div>
+                  </Link>
+                  <Link href="/blog">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Blogs
+                    </div>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
@@ -154,22 +197,33 @@ export default function Navbar() {
                 Teachers
               </li>
             </Link>
-            <Link href="/">
+            <div>
               <li
-                onClick={() => setMenuOpen(false)}
+                onClick={handleResourcesToggle}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
-                Blogs
+                Resources
               </li>
-            </Link>
-            <Link href="/event">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
-              >
-                Event
-              </li>
-            </Link>
+              {resourcesOpen && (
+                <div className="flex flex-col pl-4">
+                  <Link href="/notice">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Notice
+                    </div>
+                  </Link>
+                  <Link href="/event">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Events
+                    </div>
+                  </Link>
+                  <Link href="/blog">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Blogs
+                    </div>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
