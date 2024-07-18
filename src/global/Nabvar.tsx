@@ -18,14 +18,25 @@ import {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
+  const [programOpen, setProgramOpen] = useState(false);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleAboutToggle = () => {
+    setAboutOpen(!aboutOpen);
+  };
+
   const handleResourcesToggle = () => {
     setResourcesOpen(!resourcesOpen);
+  };
+
+  const handleProgramToggler = () => {
+    setProgramOpen(!programOpen);
   };
 
   useEffect(() => {
@@ -68,6 +79,11 @@ export default function Navbar() {
                       About Siddhartha
                     </div>
                   </Link>
+                  <Link href="#">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Mission & Vision
+                    </div>
+                  </Link>
                   <Link href="/faculty">
                     <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
                       Members
@@ -75,11 +91,38 @@ export default function Navbar() {
                   </Link>
                 </div>
               </div>
-              <Link href="/">
-                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+              <div className="relative group">
+                <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all group-hover:block">
                   Programs
                 </li>
-              </Link>
+                <div className="absolute z-[90] left-0 w-48 bg-white border rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:block transition-opacity duration-300">
+                  <Link href="/pre">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Pre Primary Level
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Primary Level
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Lower Secondary Level
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Secondary Level
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+                      Heigher Secondary
+                    </div>
+                  </Link>
+                </div>
+              </div>
               <div className="relative group">
                 <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all group-hover:block">
                   Resources
@@ -156,16 +199,21 @@ export default function Navbar() {
             </Link>
             <div>
               <li
-                onClick={handleResourcesToggle}
+                onClick={handleAboutToggle}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
               >
                 About Us
               </li>
-              {resourcesOpen && (
+              {aboutOpen && (
                 <div className="flex flex-col pl-4">
                   <Link href="/about">
                     <div className="py-2 cursor-pointer text-lg text-white">
                       About Siddhratha
+                    </div>
+                  </Link>
+                  <Link href="/missionvision">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Mission & Vision
                     </div>
                   </Link>
                   <Link href="/faculty">
@@ -173,22 +221,46 @@ export default function Navbar() {
                       Members
                     </div>
                   </Link>
+                </div>
+              )}
+            </div>
+            <div>
+              <li
+                onClick={handleProgramToggler}
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+              >
+                Programs
+              </li>
+              {programOpen && (
+                <div className="flex flex-col pl-4">
+                  <Link href="/pre">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Pre Primary Level
+                    </div>
+                  </Link>
+                  <Link href="/faculty">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Primaray Level
+                    </div>
+                  </Link>
                   <Link href="/blog">
                     <div className="py-2 cursor-pointer text-lg text-white">
-                      Blogs
+                      Lower Secondary Level
+                    </div>
+                  </Link>
+                  <Link href="/blog">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Secondary Level
+                    </div>
+                  </Link>
+                  <Link href="/blog">
+                    <div className="py-2 cursor-pointer text-lg text-white">
+                      Higher Secondary Level
                     </div>
                   </Link>
                 </div>
               )}
             </div>
-            <Link href="/">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
-              >
-                Programs
-              </li>
-            </Link>
             <Link href="/faculty">
               <li
                 onClick={() => setMenuOpen(false)}
