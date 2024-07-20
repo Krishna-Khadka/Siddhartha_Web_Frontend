@@ -101,22 +101,17 @@ export default function Navbar() {
                       Pre Primary Level
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="/primary">
                     <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
                       Primary Level
                     </div>
                   </Link>
-                  <Link href="#">
-                    <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
-                      Lower Secondary Level
-                    </div>
-                  </Link>
-                  <Link href="#">
+                  <Link href="/secondary">
                     <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
                       Secondary Level
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="/plustwo">
                     <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
                       Heigher Secondary
                     </div>
@@ -238,22 +233,17 @@ export default function Navbar() {
                       Pre Primary Level
                     </div>
                   </Link>
-                  <Link href="/faculty">
+                  <Link href="/primary">
                     <div className="py-2 cursor-pointer text-lg text-white">
                       Primaray Level
                     </div>
                   </Link>
-                  <Link href="/blog">
-                    <div className="py-2 cursor-pointer text-lg text-white">
-                      Lower Secondary Level
-                    </div>
-                  </Link>
-                  <Link href="/blog">
+                  <Link href="/secondary">
                     <div className="py-2 cursor-pointer text-lg text-white">
                       Secondary Level
                     </div>
                   </Link>
-                  <Link href="/blog">
+                  <Link href="/plustwo">
                     <div className="py-2 cursor-pointer text-lg text-white">
                       Higher Secondary Level
                     </div>

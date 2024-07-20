@@ -278,3 +278,17 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+/* coming soon css */
+.text {
+  font-size: 4rem;
+  color: white;
+  animation: fadeIn 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
