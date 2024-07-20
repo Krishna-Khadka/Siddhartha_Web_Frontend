@@ -140,15 +140,20 @@ export default function Navbar() {
                   </Link>
                 </div>
               </div>
-              <Link href="/">
+              <Link href="/gallery">
+                <div className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
+                  Gallery
+                </div>
+              </Link>
+              <Link href="/contact">
                 <li className="ml-10 tracking-wider capitalize font-semibold hover:border-b hover:border-mainColor hover:pb-2 text-md text-secColor hover:text-mainColor duration-300 transition-all">
                   Contact
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="#">
                 <li className="ml-10">
                   <button className="tracking-wider capitalize font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all">
-                    view vacancy
+                    sign in
                   </button>
                 </li>
               </Link>
@@ -286,7 +291,17 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            <Link href="/">
+
+            <Link href="/gallery">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
+              >
+                Gallery
+              </li>
+            </Link>
+
+            <Link href="/contact">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer text-xl uppercase border-b border-gray-500 mt-2 font-normal text-white"
@@ -294,9 +309,9 @@ export default function Navbar() {
                 Contact
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#">
               <button className="bg-blue-600 text-white py-2 px-6 mt-4 rounded-sm">
-                Log In
+                Sign In
               </button>
             </Link>
           </ul>
