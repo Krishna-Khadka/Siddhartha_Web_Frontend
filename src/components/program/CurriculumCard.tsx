@@ -1,4 +1,3 @@
-
 import Image, { StaticImageData } from "next/image";
 import "./Program.css";
 
@@ -13,11 +12,14 @@ export default function CurriculumCard({
   imageSrc,
   title,
   description,
-  bgColor
+  bgColor,
 }: CurriculumCardProps) {
   return (
     <div>
-      <div style={{backgroundColor: bgColor}} className="grade-wrapper rounded-lg flex flex-col items-center py-12 px-12 bg-[#DEF4FD]">
+      <div
+        style={{ backgroundColor: bgColor }}
+        className="grade-wrapper rounded-lg flex flex-col items-center py-12 px-12 bg-[#DEF4FD]"
+      >
         <Image
           src={imageSrc}
           alt={`${title} icon`}

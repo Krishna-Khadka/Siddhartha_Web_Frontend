@@ -3,9 +3,14 @@
 import { useState } from "react";
 
 import CurriculumCard from "./CurriculumCard";
+import Facility from "./Facility";
 import { StaticImageData } from "next/image";
 
 // icons import
+
+import blog1 from "../../../public/blog1.jpg";
+import blog2 from "../../../public/blog2.jpg";
+import blog3 from "../../../public/blog3.jpg";
 
 import science from "../../../public/science.png";
 import math from "../../../public/math.png";
@@ -18,12 +23,63 @@ import gk from "../../../public/gk.png";
 
 type Tab = "Curriculum" | "ECA" | "Facilities" | "Parental Involvement";
 
+interface FacilityCardProps {
+  facImageSrc: StaticImageData;
+  title: string;
+  description: string;
+}
+
 interface CardData {
   imageSrc: StaticImageData;
   title: string;
   description: string;
   bgColor: string;
 }
+
+const facilityData: FacilityCardProps[] = [
+  {
+    facImageSrc: blog1,
+    title: "Science Labs",
+    description:
+      "Our fully equipped science labs provide a hands-on learning environment where students can conduct experiments and explore scientific concepts.",
+  },
+  {
+    facImageSrc: blog2,
+    title: "Computer Labs",
+    description:
+      "Featuring the latest technology and software, our computer labs are designed to enhance digital literacy and support our technology-integrated curriculum.",
+  },
+  {
+    facImageSrc: blog3,
+    title: "Library",
+    description:
+      "Our library boasts a vast collection of books, journals, and digital resources, fostering a love for reading and research.",
+  },
+  {
+    facImageSrc: blog1,
+    title: "Art Studios",
+    description:
+      "These creative spaces are equipped with various art supplies and tools, encouraging students to express themselves through different art forms.",
+  },
+  {
+    facImageSrc: blog2,
+    title: "Sports Facilities",
+    description:
+      "Our sports fields, gymnasium, and swimming pool offer ample opportunities for physical education and team sports.",
+  },
+  {
+    facImageSrc: blog3,
+    title: "Auditorium",
+    description:
+      "A multi-purpose auditorium for school assemblies, performances, and events, providing a platform for students to showcase their talents.",
+  },
+  {
+    facImageSrc: blog1,
+    title: "Cafeteria",
+    description:
+      "Serving nutritious meals and snacks, our cafeteria is a place where students can enjoy healthy food in a comfortable environment.",
+  },
+];
 
 const cardData: CardData[] = [
   {
@@ -110,9 +166,22 @@ export default function NavsAndTabs() {
           </div>
         );
       case "ECA":
-        return <div>Extracurricular Activities Content</div>;
+        return <div>ECA Content</div>;
       case "Facilities":
-        return <div>Facilities Content</div>;
+        return (
+          <div className="mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {facilityData.map((facility, index) => (
+                <Facility
+                  key={index}
+                  facImageSrc={facility.facImageSrc}
+                  title={facility.title}
+                  description={facility.description}
+                />
+              ))}
+            </div>
+          </div>
+        );
       case "Parental Involvement":
         return <div>Parental Involvement Content</div>;
       default:
