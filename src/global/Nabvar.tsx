@@ -79,7 +79,7 @@ export default function Navbar() {
                       About Siddhartha
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="/missionvision">
                     <div className="tracking-wider capitalize font-semibold text-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
                       Mission & Vision
                     </div>
