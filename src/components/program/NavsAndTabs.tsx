@@ -20,6 +20,8 @@ import computer from "../../../public/science.png";
 import nepali from "../../../public/nepali.png";
 import health from "../../../public/health.png";
 import gk from "../../../public/gk.png";
+import ImgGallery from "./ImgGallery";
+import ParentsGallery from "./ParentsGallery";
 
 type Tab = "Curriculum" | "ECA" | "Facilities" | "Parental Involvement";
 
@@ -166,7 +168,9 @@ export default function NavsAndTabs() {
           </div>
         );
       case "ECA":
-        return <div>ECA Content</div>;
+        return <div>
+          <ImgGallery />
+        </div>;
       case "Facilities":
         return (
           <div className="mt-4">
@@ -183,7 +187,9 @@ export default function NavsAndTabs() {
           </div>
         );
       case "Parental Involvement":
-        return <div>Parental Involvement Content</div>;
+        return <div>
+          <ParentsGallery />
+        </div>;
       default:
         return <div>Select a tab</div>;
     }
