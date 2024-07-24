@@ -35,7 +35,6 @@ const PlusTwoGallery = () => {
     if (galleryRef.current) {
       const gallery = lightGallery(galleryRef.current, {
         plugins: [lgThumbnail, lgFullscreen, lgZoom],
-        licenseKey: "your_license_key",
         speed: 500,
       });
 
@@ -47,9 +46,16 @@ const PlusTwoGallery = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" ref={galleryRef}>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        ref={galleryRef}
+      >
         {images.map((gallery, index) => (
-          <a key={index} href={gallery.src} className="relative group w-full h-64 overflow-hidden">
+          <a
+            key={index}
+            href={gallery.src}
+            className="relative group w-full h-64 overflow-hidden"
+          >
             <Image
               src={gallery.src}
               alt={gallery.alt}

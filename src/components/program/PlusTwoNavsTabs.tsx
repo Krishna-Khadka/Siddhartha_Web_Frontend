@@ -3,6 +3,7 @@
 import React, { act, useState } from "react";
 import Admission from "./Admission";
 import PlusTwoGallery from "./PlusTwoGallery";
+import PlusTwoTestimonials from "./PlusTwoTestimonials";
 
 type Tab =
   | "Overview"
@@ -37,7 +38,11 @@ export default function PlusTwoNavsTabs() {
       case "Faq":
         return <div>Faq Faculty</div>;
       case "Testimonials":
-        return <div>Testimonials</div>;
+        return (
+          <div>
+            <PlusTwoTestimonials />
+          </div>
+        );
       case "Gallery":
         return (
           <div>
