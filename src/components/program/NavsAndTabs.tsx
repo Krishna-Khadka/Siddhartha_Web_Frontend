@@ -168,9 +168,11 @@ export default function NavsAndTabs() {
           </div>
         );
       case "ECA":
-        return <div>
-          <ImgGallery />
-        </div>;
+        return (
+          <div>
+            <ImgGallery />
+          </div>
+        );
       case "Facilities":
         return (
           <div className="mt-4">
@@ -187,9 +189,11 @@ export default function NavsAndTabs() {
           </div>
         );
       case "Parental Involvement":
-        return <div>
-          <ParentsGallery />
-        </div>;
+        return (
+          <div>
+            <ParentsGallery />
+          </div>
+        );
       default:
         return <div>Select a tab</div>;
     }
