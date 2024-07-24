@@ -18,7 +18,7 @@ export default function PlusTwo() {
               with a robust educational foundation that prepares them for higher
               education and future career paths. Our curriculum is crafted to
               develop critical thinking, creativity, and a passion for lifelong
-              learning..
+              learning.
             </p>
           </div>
 

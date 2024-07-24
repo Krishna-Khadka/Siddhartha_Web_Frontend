@@ -9,7 +9,7 @@ export default function Admission() {
         <p className="text-base sm:text-base md:text-base lg:text-lg tracking-wider text-[#606060] pt-2">
           Applicants need at least GPA 2.0 or Equivalent Grades in SEE /
           Equivalent level exams for enrolment in Management. Applicants must
-          fulfill the NEB's subject-specific grade requirements.
+          fulfill the NEB subject-specific grade requirements.
         </p>
       </div>
 

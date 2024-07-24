@@ -89,7 +89,7 @@ export default function PlusTwoNavsTabs() {
             }}
             className="flex-1 w-full sm:w-full md:py-2 md:px-4 rounded text-center bg-blue-500 text-white"
           >
-            FAQ's
+            FAQ
           </li>
           <li
             onClick={() => handleTabChange("Testimonials")}
