@@ -194,7 +194,6 @@
 .bannerBG {
   background: linear-gradient(#0009, #000A), url(../../public/aboutBanner.jpg);
   background-color: rgba(0, 0, 0, 0.13);
-  /* background-position: top center; */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -289,5 +288,14 @@
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+/* Banner  */
+.global-banner {
+  background: linear-gradient(#0009,#000B), url(../../public/herobg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50dvh;
+  background-position: center center;
 }
 

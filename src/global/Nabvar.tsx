@@ -153,7 +153,7 @@ export default function Navbar() {
               <Link href="#">
                 <li className="ml-10">
                   <button className="tracking-wider capitalize font-semibold bg-mainColor text-white text-sm py-3 px-6 rounded-[40px] hover:bg-secColor duration-300 transition-all">
-                    sign in
+                    Log in
                   </button>
                 </li>
               </Link>
@@ -311,7 +311,7 @@ export default function Navbar() {
             </Link>
             <Link href="#">
               <button className="bg-blue-600 text-white py-2 px-6 mt-4 rounded-sm">
-                Sign In
+                Log In
               </button>
             </Link>
           </ul>

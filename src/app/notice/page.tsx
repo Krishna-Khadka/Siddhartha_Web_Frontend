@@ -1,11 +1,13 @@
+import BannerGlobal from "@/components/banner/BannerGlobal";
 import Notice from "@/components/notice/Notice";
 import React from "react";
 
 export default function page() {
   return (
     <>
-      <div className="py-20">
-        <div className="container mx-auto">
+      <div>
+        <BannerGlobal />
+        <div className="container mx-auto py-20">
           <Notice />
         </div>
       </div>
