@@ -284,6 +284,12 @@
   animation: fadeIn 3s ease-in-out infinite;
 }
 
+.item {
+  background-image: url(../../public/slider1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   50% { opacity: 1; }
