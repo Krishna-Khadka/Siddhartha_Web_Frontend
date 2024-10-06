@@ -9,6 +9,7 @@ import Link from "next/link";
 import { StaticImageData } from "next/image";
 
 interface BlogProps {
+  blog_id: string,
   imageSrc: StaticImageData;
   date: string;
   title: string;
@@ -16,6 +17,7 @@ interface BlogProps {
 }
 
 const BlogCardLayout: React.FC<BlogProps> = ({
+  blog_id,
   imageSrc,
   date,
   title,
@@ -40,7 +42,7 @@ const BlogCardLayout: React.FC<BlogProps> = ({
           {description}
         </p>
         <Link
-          href="#"
+          href={`./blog/${blog_id}`} passHref
           className="flex items-center gap-1 duration-300 transition-all hover:tracking-[1px] hover:text-[#92210f] text-[#252525] pr-5 text-[15px] font-semibold"
         >
           Find out more

@@ -7,12 +7,13 @@ interface GalleryInfo {
   imgSrc: StaticImageData;
   title: string;
   description: string;
+  gallery_id: string;
 }
 
-const GalleryListLayout = ({ imgSrc, title, description }: GalleryInfo) => {
+const GalleryListLayout = ({ gallery_id, imgSrc, title, description }: GalleryInfo) => {
   return (
     <>
-      <Link href="#">
+      <Link href={`./gallery/${gallery_id}`} passHref>
         <div className="card-wrapper">
           <div className="relative">
             <Image

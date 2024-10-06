@@ -9,18 +9,21 @@ const lists = [
     title: "Grade XI Welcome Programme",
     description:
       "Image Gallery from the Welcome Programme of Grade XI 2081 Batch",
+    gallery_id: "1",
   },
   {
     imgSrc: gallery2,
     title: "Saraswati Puja 2080",
     description:
       "Image Gallery from the Welcome Programme of Saraswati Puja 2080",
+    gallery_id: "2",
   },
   {
     imgSrc: gallery3,
     title: "Parents Day 2080",
     description:
       "Image Gallery from the Welcome Programme of Parent's Day 2080",
+    gallery_id: "3",
   },
 ];
 
@@ -32,6 +35,7 @@ const GalleryList = () => {
           {lists.map((list, index) => (
             <GalleryListLayout
               key={index}
+              gallery_id={list.gallery_id}
               imgSrc={list.imgSrc}
               title={list.title}
               description={list.description}

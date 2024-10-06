@@ -11,6 +11,7 @@ const blogs = [
     title: "How I applying to school",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore",
+    blog_id: "1"
   },
   {
     imageSrc: blog2,
@@ -18,6 +19,7 @@ const blogs = [
     title: "How I applying to school",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore",
+    blog_id: "2"
   },
   {
     imageSrc: blog3,
@@ -25,6 +27,7 @@ const blogs = [
     title: "How I applying to school",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore",
+    blog_id: "3"
   },
 ];
 
@@ -40,6 +43,7 @@ const BlogCard = () => {
             style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.15)" }}
           >
             <BlogCardLayout
+              blog_id={blog.blog_id}
               imageSrc={blog.imageSrc}
               date={blog.date}
               title={blog.title}
