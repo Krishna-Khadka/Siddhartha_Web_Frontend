@@ -41,10 +41,18 @@ const GalleryDetail = () => {
 
   return (
     <>
-      <div className="gallery">
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-4 p-3">
         {data.map((item, index) => (
-          <div className="pics" key={index} onClick={() => handleImageClick(index)}>
-            <Image src={item.imgSrc} alt={`Image of ID: ${item.id}`} style={{ width: "100%" }} />
+          <div
+            className="mb-3 cursor-pointer hover:opacity-80"
+            key={index}
+            onClick={() => handleImageClick(index)}
+          >
+            <Image
+              src={item.imgSrc}
+              alt={`Image of ID: ${item.id}`}
+              className="w-full"
+            />
           </div>
         ))}
       </div>
@@ -59,6 +67,7 @@ const GalleryDetail = () => {
         />
       )}
     </>
+
   );
 };
 
