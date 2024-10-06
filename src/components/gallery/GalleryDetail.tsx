@@ -1,8 +1,8 @@
 "use client";
-
+import "./gallery.css"
 import React, { useState } from "react";
 import Image from "next/image";
-import "./gallery.css"
+
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
