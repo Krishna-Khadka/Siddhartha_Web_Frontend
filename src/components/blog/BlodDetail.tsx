@@ -20,7 +20,7 @@ const BlogDetail = () => {
             <BannerGlobal />
             <div className="py-20">
                 <div className="container">
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className='w-full md:w-2/3'>
                             <div className='w-full h-[500px]'>
                                 <Image
@@ -62,7 +62,7 @@ const BlogDetail = () => {
                             </div>
                         </div>
                         <div className='w-full md:w-1/3'>
-                            <div className='px-8'>
+                            <div className='px-0 md:px-8'>
                                 <h2 className='inline-block text-3xl text-secColor font-semibold capitalize border-b-4 pb-2 border-secColor'>categories</h2>
                                 <div>
                                     <ul>

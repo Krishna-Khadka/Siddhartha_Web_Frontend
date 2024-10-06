@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={robotoCondensed.className}>
         <NextTopLoader color="#EA062B" showSpinner={true} height={5} />
-        <NoticePopup />
+        {/* <NoticePopup /> */}
         <CustomCursor>
           <AOSInitializer />
           <TopNav />
